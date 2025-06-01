@@ -1,0 +1,18 @@
+.flex {
+    display: flex;
+    &.inline {
+        display: inline-flex;
+    }
+    &.between {
+        justify-content: space-between;
+    }
+    &.around {
+        justify-content: space-around;
+    }
+    &.align-center {
+        align-items: center;
+    }
+    &.grow {
+        flex-grow: 1;
+    }
+}

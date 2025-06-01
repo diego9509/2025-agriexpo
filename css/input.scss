@@ -1,0 +1,14 @@
+input:not([type="checkbox"]),
+input:not([type="radio"]) {
+    font-size: 1.125rem;
+    font-family: 'Pretendard';
+    border: 1px solid $border-input;
+    border-radius: $basic-radius;
+    padding: $elem-tb .5rem;
+    &::placeholder {
+        color: #bbb;
+    }
+    &:required {
+        background: lighten($required-blue, 2%);
+    }
+}

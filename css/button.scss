@@ -1,0 +1,15 @@
+button {
+    cursor: pointer;
+    background: white;
+    color: #333;
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding: $elem-tb 1.25rem;
+    border: 1px solid $border-button;
+    border-radius: $basic-radius;
+    &.is-primary {
+        background: $light-blue;
+        border: none;
+        color: white;
+    }
+}

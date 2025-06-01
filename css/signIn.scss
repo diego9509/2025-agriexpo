@@ -1,0 +1,123 @@
+.sign-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .wrapper {
+        border-radius: 1.25rem;
+        box-shadow: $box-shadow;
+        overflow: hidden;
+        header {
+            display: flex;
+            justify-content: space-around;
+        }
+        h1,
+        h2 {
+            background: $bg-tab-default;
+            color: white;
+            font-size: 1.875rem;
+            font-weight: 600;
+            margin: 0;
+            padding: 1.625rem 0;
+            text-align: center;
+            flex-grow: 1;
+            &.selected {
+                background: $bg-tab-selected
+            }
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
+        }
+        p {
+            text-align: center;
+            margin: 0 0 2rem;
+        }
+        > div {
+            padding: 2rem 10rem;
+        }
+        background: white;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        margin-bottom: 2rem;
+        > .flex {
+            width: 100%;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+        label {
+            text-align: left;
+            font-size: 1rem;
+            font-weight: 500;
+            flex-shrink: 0;
+            &.is-required {
+                &:after {
+                    content: "*";
+                    color: $dark-red;
+                    position: relative;
+                    top: -2px;
+                    left: 2px;
+                }
+            }
+        }
+    }
+    button {
+        &[type="submit"] {
+            background: $dark-blue;
+            border: none;
+            color: white;
+            padding: .625rem 3rem;
+            border-radius: 9999px;
+        }
+    }
+    .flex.center {
+        align-items: center;
+        a {
+            color: #333;
+            text-decoration: none;
+            font-size: .875rem;
+        }
+        hr {
+            width: 1px;
+            height: .75rem;
+            border: none;
+            background: $border-table;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    &.sign-up {
+        .wrapper {
+            h1 {
+                padding: 1.625rem 10rem;
+            }
+            > div {
+                padding: 2rem 5rem;
+            }
+            label {
+                flex-basis: 6.5rem;
+            }
+            .flex.inline {
+                input {
+                    flex-grow: 1;
+                }
+            }
+            .grow {
+                position: relative;
+                gap: .25rem;
+                span {
+                    position: absolute;
+                    bottom: 0;
+                    left: .5rem;
+                    transform: translateY(calc(100% + .125rem));
+                    color: $dark-red;
+                    font-size: .75rem;
+                }
+            }
+        }
+    }
+}
