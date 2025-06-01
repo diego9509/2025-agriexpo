@@ -1,0 +1,43 @@
+ul[role="tablist"] {
+    list-style: none;
+    display: flex;
+    gap: 1px;
+    margin: 0;
+    padding: 0;
+    li {
+        flex-grow: 1;
+        font-size: 1.125rem;
+        a {
+            position: relative;
+            display: block;
+            text-align: center;
+            color: white;
+            background: $bg-tab-default;
+            text-decoration: none;
+            font-weight: 300;
+            padding: 1rem 0;
+            &[aria-selected="true"] {
+                background: $bg-tab-selected;
+                font-weight: 400;
+                &:after {
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    content: '';
+                    display: inline-block;
+                    border-left: .625rem solid transparent;
+                    border-right: .625rem solid transparent;
+                    
+                    border-bottom: .625rem solid $bg-color;
+                }
+            }
+        }
+    }
+}
+
+div[role="tabpanel"] {
+    background: white;
+    border: 1px solid $dark-blue;
+    margin-top: 2rem;
+}

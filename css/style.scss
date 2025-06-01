@@ -4,6 +4,7 @@
 @import "signin.scss";
 @import "button.scss";
 @import "input.scss";
+@import "tabs.scss";
 
 *,
 *:before,
@@ -25,4 +26,26 @@ body {
 .page-wrapper {
     height: 100%;
     background: $bg-color;
+    h1,
+    h2 {
+        background: $bg-tab-default;
+        color: white;
+        font-size: 1.875rem;
+        font-weight: 600;
+        margin: 0;
+        padding: 1.625rem 0;
+        text-align: center;
+        flex-grow: 1;
+        &.selected {
+            background: $bg-tab-selected
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.375rem;
+        }
+    }
+    >.wrapper {
+        padding: 4rem;
+    }
 }
