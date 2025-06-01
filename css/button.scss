@@ -7,6 +7,10 @@ button {
     padding: $elem-tb 1.25rem;
     border: 1px solid $border-button;
     border-radius: $basic-radius;
+    &:hover {
+        border-color: $light-blue;
+        color: $light-blue;
+    }
     &.is-primary {
         background: $light-blue;
         border: none;
