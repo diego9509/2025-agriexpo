@@ -15,5 +15,14 @@ button {
         background: $light-blue;
         border: none;
         color: white;
+        &.is-complete {
+            background:white;
+            border: 1px solid $light-blue;
+            color: $light-blue;
+        }
+    }
+    &.is-submit {
+        margin-top: 4rem;
+        padding: .75rem 4rem;
     }
 }

@@ -1,0 +1,78 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-top: 2px solid $border-table;
+    border-bottom: 2px solid $border-table;
+    margin-bottom: .5rem;
+    th, td {
+        text-align: center;
+        border-left: 1px solid $border-table;
+        padding: .25rem .5rem;
+        &:first-of-type {
+            border-left: none;
+        }
+    }
+    th {
+        background: $bg-th;
+        font-weight: 600;
+        padding: 1rem .5rem;
+    }
+    td {
+        border-top: 1px solid $border-table;
+        input[type=text],
+        input[type=password],
+        input[type=tel],
+        input[type=email] {
+            width: 100%;
+        }
+        .align-center {
+            gap: .25rem;
+            *[role=button] {
+                cursor: pointer;
+                width: 2rem;
+            }
+        }
+    }
+    &.is-form {
+        :not(tr:first-of-type) {
+            th {
+                border-top: 1px solid $border-table;
+            }
+        }
+        th,
+        td {
+            text-align: left;
+            padding: .25rem .75rem;
+        }
+    }
+}
+
+.ag-root-wrapper {
+    border-radius: 0;
+    border: 2px solid $border-table;
+    border-left: none;
+    border-right: none;
+}
+.ag-root-wrapper-body {
+    .ag-header,
+    .ag-row {
+        font-size: 1rem;
+    }
+    .ag-header {
+        background: $bg-th;
+    }
+    .ag-header-cell-label {
+        justify-content: center;
+        font-weight: 600;
+    }
+    .ag-header-cell,
+    .ag-cell {
+        border-left: 1px solid $border-table;
+        &:first-of-type {
+            border-left: none;
+        }
+    }
+    .ag-cell {
+        text-align: center;
+    }
+}

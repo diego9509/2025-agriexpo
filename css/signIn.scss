@@ -35,15 +35,6 @@
             font-size: 1rem;
             font-weight: 500;
             flex-shrink: 0;
-            &.is-required {
-                &:after {
-                    content: "*";
-                    color: $dark-red;
-                    position: relative;
-                    top: -2px;
-                    left: 2px;
-                }
-            }
         }
     }
     button {

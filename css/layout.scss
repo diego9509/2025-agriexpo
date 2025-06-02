@@ -12,6 +12,9 @@
     &.center {
         justify-content: center;
     }
+    &.end {
+        justify-content: flex-end;
+    }
     &.align-center {
         align-items: center;
     }

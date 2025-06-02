@@ -37,7 +37,10 @@ ul[role="tablist"] {
 }
 
 div[role="tabpanel"] {
-    background: white;
-    border: 1px solid $dark-blue;
-    margin-top: 2rem;
+    > section {
+        background: white;
+        border: 1px solid $dark-blue;
+        margin-top: 1rem;
+        padding: 0 4rem 4rem;
+    }
 }
