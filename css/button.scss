@@ -21,6 +21,10 @@ button {
             color: $light-blue;
         }
     }
+    &.is-secondary {
+        border-color: $light-blue;
+        color: $light-blue;
+    }
     &.is-submit {
         margin-top: 4rem;
         padding: .75rem 4rem;

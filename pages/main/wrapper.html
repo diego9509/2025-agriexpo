@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="../../js/tabby/dist/js/tabby.polyfills.min.js"></script>
-    <!-- <script src="../../js/tabby/dist/js/tabby.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
     <link rel="stylesheet" href="../../css/style.min.css" />
 </head>
 <body>
@@ -49,7 +47,26 @@
                             <strong class="is-blue">총합계 11,111,111원</strong>
                         </div>
                         <h3>전시신청정보</h3>
-                        <div id="grid" domLayout='autoHeight'></div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>신청항목</th>
+                                    <th>신청기한</th>
+                                    <th>신청현황</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-left">기본정보<span class="is-red">(필수)</span></td>
+                                    <td>-</td>
+                                    <td><button class="is-secondary">완료/수정</button></td>
+                                </tr>
+                                    <td class="text-left">유틸리티 신청<span class="is-blue">(선택)</span></td>
+                                    <td>-</td>
+                                    <td><button class="is-primary">신청하기</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </section>
             </div>
@@ -66,12 +83,6 @@
                     <div class="collapse first show">
                         <h3>기본 사항</h3>
                         <table class="is-form">
-                            <colgroup>
-                                <col width="25%" />
-                                <col width="25%" />
-                                <col width="25%" />
-                                <col width="25%" />
-                            </colgroup>
                             <tbody>
                                 <tr>
                                     <th class="is-required">참가기관명</th>
@@ -127,12 +138,6 @@
                             </label>
                         </h3>
                         <table class="is-form">
-                            <colgroup>
-                                <col width="25%" />
-                                <col width="25%" />
-                                <col width="25%" />
-                                <col width="25%" />
-                            </colgroup>
                             <tbody>
                                 <tr>
                                     <th class="is-required">업체명</th>
@@ -165,18 +170,14 @@
 
                         <h3>기본 사항</h3>
                         <table class="is-form">
-                            <colgroup>
-                                <col width="25%" />
-                                <col />
-                            </colgroup>
                             <tbody>
                                 <tr>
                                     <th class="is-required">국문상호</th>
-                                    <td><input type="text" placeholder="국문 최대 12자 이내(띄어쓰기 및 기호 포함)" /></td>
+                                    <td colspan="3"><input type="text" placeholder="국문 최대 12자 이내(띄어쓰기 및 기호 포함)" /></td>
                                 </tr>
                                 <tr>
                                     <th class="is-required">영문상호(대문자로 기재)</th>
-                                    <td><input type="text" placeholder="영문 최대 24자 이내(띄어쓰기 및 기호 포함)" /></td>
+                                    <td colspan="3"><input type="text" placeholder="영문 최대 24자 이내(띄어쓰기 및 기호 포함)" /></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -190,12 +191,6 @@
 
                         <h3>추가 정보</h3>
                         <table class="is-form">
-                            <colgroup>
-                                <col width="25%" />
-                                <col width="25%" />
-                                <col width="25%" />
-                                <col width="25%" />
-                            </colgroup>
                             <tbody>
                                 <tr>
                                     <th class="is-required">대표자</th>
@@ -361,5 +356,4 @@
 </script>
 <!-- first tab -->
 <script src="../../js/collapse.js"></script>
-<script src="../../js/condition.js"></script>
 </html>

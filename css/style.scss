@@ -53,6 +53,17 @@ fieldset {
         left: 2px;
     }
 }
+.text{
+    &-right {
+        text-align: right;
+    }
+    &-center {
+        text-align: center;
+    }
+    &-left {
+        text-align: left;
+    }
+}
 
 .page-wrapper {
     min-height: 100%;
@@ -171,3 +182,5 @@ fieldset {
         }
     }
 }
+
+@import "breakpoint.scss";

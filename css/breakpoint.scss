@@ -1,0 +1,180 @@
+@media (max-width: 768px) {
+    input:not([type="checkbox"]),
+    input:not([type="radio"]),
+    select {
+        font-size: 1rem;
+        padding: .375rem .5rem;
+    }
+    button {
+        font-size: .875rem;
+        &.is-toggle {
+            min-width: auto;
+            padding: .5rem .75rem;
+            &:after {
+                width: .875rem;
+                height: .875rem;
+            }
+        }
+        &.is-submit {
+            padding: .75rem 3rem;
+        }
+    }
+    fieldset {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        > label {
+            margin: 0 !important;
+        }
+    }
+    label:has(input) {
+        font-size: .8125rem;
+    }
+    table {
+        font-size: .8125rem;
+        margin-bottom: .25rem;
+        th {
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        }
+        &.is-form {
+            border-top-width: 1px;
+            tr {
+                display: flex;
+                flex-wrap: wrap;
+                th, td {
+                    padding: .25rem;
+                }
+                th {
+                    width: 30%;
+                    &:nth-of-type(2) {
+                        border-left: none;
+                    }
+                }
+                td {
+                    width: 70%;
+                    &:last-of-type {
+                        border-left: none;
+                    }
+                }
+            }
+        }
+    }
+
+    ul[role=tablist] {
+        li {
+            font-size: .875rem;
+            a {
+                padding: .75rem 0;
+                &[aria-selected=true]:after {
+                    border-left-width: .375rem;
+                    border-right-width: .375rem;
+                    border-bottom-width: .375rem;
+                }
+            }
+        }
+    }
+
+    .page-wrapper {
+        h1,
+        h2 {
+            font-size: 1.125rem;
+            padding: 1.25rem 0;
+            a {
+                font-size: 1.125rem;
+            }
+        }
+        &:not(.sign-in) {
+            > .wrapper {
+                padding: 1rem;
+            }
+        }
+        section {
+            h2 {
+                font-size: 1rem;
+            }
+            h3 {
+                font-size: .875rem;
+                font-weight: 600;
+                margin: 1.25rem 0 .375rem;
+            }
+        }
+        &.sign-in {
+            .wrapper {
+                width: calc(100vw - 2rem);
+                form {
+                    >.flex {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: .25rem;
+                        .grow,
+                        input {
+                            width: 100%;
+                        }
+                    }
+                }
+                label {
+                    font-size: .8125rem;
+                    flex-basis: auto;
+                }
+                p {
+                    font-size: .875rem;
+                    margin-bottom: 1rem;
+                }
+                button:not([type=submit]) {
+                    flex-shrink: 0;
+                    padding: .5rem .75rem;
+                }
+                > div {
+                    padding: 2rem 1rem;
+                }
+            }
+            &.sign-up {
+                h1 {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+            .flex.center a {
+                font-size: .75rem;
+            }
+        }
+    }
+
+    div[role=tabpanel] {
+        >section {
+            padding: 0 1rem;
+            margin-top: .5rem;
+        }
+    }
+
+    .grey-box {
+        gap: .5rem;
+        padding: 1rem;
+        img {
+            width: .875rem;
+        }
+        span,
+        strong {
+            font-size: .875rem;
+        }
+    }
+
+    .collapse {
+        &-header {
+            padding: 1rem 0;
+            strong {
+                font-size: .75rem;
+            }
+        }
+        &.show {
+            padding: 1rem 0 2rem;
+        }
+    }
+
+    .result {
+        .is-blue {
+            font-size: 1.125rem;
+        }
+    }
+}

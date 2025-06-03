@@ -18,3 +18,14 @@ input[type="checkbox"],
 input[type="radio"] {
     margin: 0;
 }
+
+label {
+    &:has(input) {
+        display: inline-flex;
+        align-items: center;
+        gap: .25rem;
+        & + label {
+            margin-left: 1rem;
+        }
+    }
+}
