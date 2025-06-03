@@ -21,44 +21,49 @@
 
             <div id="condition">
                 <section>
-                    <h3>참가비 결제 현황: <span class="is-required">미납</span></h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>부스 참가비</th>
-                                <th>유틸리티</th>
-                                <th class="is-blue">할인</th>
-                                <th>합계(VAT 포함)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>20,000,000원</td>
-                                <td>20,000,000원</td>
-                                <td class="is-blue">20,000,000원</td>
-                                <td>20,000,000원</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="grey-box flex center align-center">
-                        <span>11,111,111원</span>
-                        <img src="../../img/icon_plus.svg" alt="더하기" />
-                        <span>-11,111,111원</span>
-                        <img src="../../img/icon_equal.svg" alt="" />
-                        <strong class="is-blue">총합계 11,111,111원</strong>
+                    <div>
+                        <h3>참가비 결제 현황: <span class="is-required">미납</span></h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>부스 참가비</th>
+                                    <th>유틸리티</th>
+                                    <th class="is-blue">할인</th>
+                                    <th>합계(VAT 포함)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>20,000,000원</td>
+                                    <td>20,000,000원</td>
+                                    <td class="is-blue">20,000,000원</td>
+                                    <td>20,000,000원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="grey-box flex center align-center">
+                            <span>11,111,111원</span>
+                            <img src="../../img/icon_plus.svg" alt="더하기" />
+                            <span>-11,111,111원</span>
+                            <img src="../../img/icon_equal.svg" alt="" />
+                            <strong class="is-blue">총합계 11,111,111원</strong>
+                        </div>
+                        <h3>전시신청정보</h3>
+                        <div id="grid" domLayout='autoHeight'></div>
                     </div>
-                    <h3>전시신청정보</h3>
-                    <div id="grid" domLayout='autoHeight'></div>
                 </section>
             </div>
 
             <div id="info">
                 <section>
-                    <div class="collapse-header flex align-center">
-                        <h2>기본정보</h2>
-                        <strong class="is-red">필수 ~ 2025. 08. 27.(수)17:00 까지</strong>
+                    <div class="collapse-header">
+                        <div>
+                            <h2>기본정보</h2>
+                            <strong class="is-red">필수 ~ 2025. 08. 27.(수)17:00 까지</strong>
+                        </div>
+                        <button class="is-toggle open" data-toggle="collapse" data-target=".collapse.first" data-text="Collapse">접기</button>
                     </div>
-                    <div class="collapse-body">
+                    <div class="collapse first show">
                         <h3>기본 사항</h3>
                         <table class="is-form">
                             <colgroup>
@@ -222,11 +227,14 @@
                 </section>
 
                 <section>
-                    <div class="collapse-header flex align-center">
-                        <h2>전시부스 신청</h2>
-                        <strong class="is-red">필수 ~ 2025. 08. 27.(수)17:00 까지</strong>
+                    <div class="collapse-header">
+                        <div>
+                            <h2>전시부스 신청</h2>
+                            <strong class="is-red">필수 ~ 2025. 08. 27.(수)17:00 까지</strong>
+                        </div>
+                        <button class="is-toggle" data-toggle="collapse" data-target=".collapse.second" data-text="Collapse">펼치기</button>
                     </div>
-                    <div class="collapse-body">
+                    <div class="collapse second">
                         <div class="flex">
                             <label>
                                 <input type="checkbox" />기본부스(무료)
@@ -284,6 +292,62 @@
                         </div>
                     </div>
                 </section>
+
+                <section>
+                    <div class="collapse-header">
+                        <div>
+                            <h2>유틸리티 신청</h2>
+                            <strong class="is-blue">필수 ~ 2025. 08. 27.(수)17:00 까지</strong>
+                        </div>
+                        <button class="is-toggle" data-toggle="collapse" data-target=".collapse.third" data-text="Collapse">펼치기</button>
+                    </div>
+                    <div class="collapse third">
+                        <h3>유틸리티 신청정보</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>단가</th>
+                                    <th>신청수량</th>
+                                    <th>금액(원)/VAT 포함</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>기본부스</td>
+                                    <td>00,000 / 1KRW</td>
+                                    <td>
+                                        <select>
+                                            <option>0</option>
+                                        </select>
+                                        KW
+                                    </td>
+                                    <td>000,000</td>
+                                </tr>
+                                <tr>
+                                    <td>기본부스</td>
+                                    <td>00,000 / 1KRW</td>
+                                    <td>
+                                        <select>
+                                            <option>0</option>
+                                        </select>
+                                        KW
+                                    </td>
+                                    <td>000,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ul class="sub-info">
+                            <li><strong class="is-red">※ 기본 부스의 경우 전기 기본으로 1KW 제공됩니다.</strong> 추가 신청 시에만 기입 해 주시기 바랍니다.</li>
+                            <li>※ 독립 부스의 경우 반드시 조명용 혹은 장비용으로 소요되는 전력을 파악하시어 신청하여 주시기 바랍니다. 특히, 장비에 필요한 전력은  정확히 파악하시어 작성해 주셔야 하며 또한 전력 시공은 주최사가 선정한 업체 외에는 전시장 내에서 전기 공사 작업이 불가능하므로 반드시 지정된 업체를 통한 공사 바랍니다.</li>
+                            <li>※ 24시간 사용해야 하는 전기는 24시간용 전기로 반드시 신청해 주시기 바랍니다.</li>
+                            <li>※ 현장에서는 추가 설치가 불가하오니 신청 마감일을 확인하시어 미리 신청 바랍니다.</li>
+                        </ul>
+                        <div class="flex center">
+                            <button class="is-primary is-submit">저장</button>
+                        </div>
+                    </div>
+                </section>
             </div>
 
             <div id="confirm">3</div>
@@ -296,5 +360,6 @@
 	var tabs = new Tabby('[data-tabs]');
 </script>
 <!-- first tab -->
+<script src="../../js/collapse.js"></script>
 <script src="../../js/condition.js"></script>
 </html>
