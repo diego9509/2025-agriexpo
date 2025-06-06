@@ -1,0 +1,78 @@
+@media print { 
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    ul[role=tablist] {
+        display: none !important;
+        visibility: hidden;
+    }
+
+    h1, h2, h3 {
+        margin-top: 0cm !important;
+    }
+    h1 {
+        background: transparent !important;
+        text-align: left !important;
+        color: #333 !important;
+        font-size: 16pt !important;
+        font-weight: 700 !important;
+        margin-bottom: 0.5cm !important;
+    }
+    h2 {
+        font-size: 14pt !important;
+        margin-bottom: 0.24cm !important;
+    }
+    h3 {
+        font-size: 11pt !important;
+        margin-bottom: 0.12cm !important;
+    }
+    .page-wrapper {
+        background: transparent !important;
+    }
+    .wrapper {
+        padding: 0 !important;
+        section {
+            border: none !important;
+            padding: 0 !important;
+            .collapse {
+                &-header {
+                    padding: 0 !important;
+                }
+                &.show {
+                    border-top: none;
+                }
+            }
+        }
+    }
+    table {
+        font-size: 10pt !important;
+        margin-bottom: 0.8cm !important;
+        th, td {
+            height: 0.8cm !important;
+        }
+    }
+    .result {
+        font-size: 10pt !important;
+        margin-top: 1cm !important;
+        line-height: 1.4 !important;
+        & + .result {
+            margin-top: 0.4cm !important;
+        }
+    }
+    .is-submit {
+        display: none !important;
+    }
+}
+@page {
+    size: a4;
+    page-break-after: always; 
+    counter-increment: page;
+
+    @bottom-center {
+        counter-increment: page;
+        content: "Page " counter(page);
+    }
+
+}

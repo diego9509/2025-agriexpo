@@ -1,4 +1,5 @@
 button {
+    $larger-padding: 3.5rem;
     cursor: pointer;
     background: white;
     color: #333;
@@ -27,7 +28,7 @@ button {
     }
     &.is-submit {
         margin-top: 4rem;
-        padding: .75rem 4rem;
+        padding: .75rem $larger-padding;
     }
     &.is-toggle {
         display:flex;
@@ -51,4 +52,15 @@ button {
             }
         }
     }
+    &.is-action {
+        background: #666;
+        border: none;
+        color: white;
+        padding-left: $larger-padding;
+        padding-right: $larger-padding;
+        margin-bottom: 1rem;
+    }
+}
+img[role=button] {
+    cursor: pointer;
 }

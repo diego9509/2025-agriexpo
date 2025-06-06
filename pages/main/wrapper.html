@@ -6,6 +6,7 @@
     <title>Document</title>
     <script src="../../js/tabby/dist/js/tabby.polyfills.min.js"></script>
     <link rel="stylesheet" href="../../css/style.min.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="../../css/print.min.css"/>
 </head>
 <body>
     <div class="page-wrapper">
@@ -19,7 +20,7 @@
 
             <div id="condition">
                 <section>
-                    <div>
+                    <div class="collapse show" style="border-top: none">
                         <h3>참가비 결제 현황: <span class="is-required">미납</span></h3>
                         <table>
                             <thead>
@@ -343,9 +344,340 @@
                         </div>
                     </div>
                 </section>
+
+                <section>
+                    <div class="collapse-header">
+                        <div>
+                            <h2>위험·중량물 신고</h2>
+                            <strong class="is-blue">필수 ~ 2025. 09. 03.(수)17:00 까지</strong>
+                        </div>
+                        <button class="is-toggle" data-toggle="collapse" data-target=".collapse.forth" data-text="Collapse">펼치기</button>
+                    </div>
+                    <div class="collapse forth">
+                        <h3>위험물 취급 신고</h3>
+                        <table class="is-form">
+                            <tbody>
+                                <tr>
+                                    <th>반입일시</th>
+                                    <td><input type="date" /></td>
+                                    <th>반출일시</th>
+                                    <td><input type="date" /></td>
+                                </tr>
+                                <tr>
+                                    <th>신고 물품명</th>
+                                    <td><input type="text" /></td>
+                                    <th>용기 및 포장상태</th>
+                                    <td><input type="text" /></td>
+                                </tr>
+                                <tr>
+                                    <th>중량(kg)</th>
+                                    <td><input type="number" /></td>
+                                    <th>차량번호</th>
+                                    <td><input type="text" /></td>
+                                </tr>
+                                <tr>
+                                    <th>반입 후 보관방법</th>
+                                    <td colspan="3"><textarea name="" id="" rows="5"></textarea></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="flex center">
+                            <button class="is-action">추가</button>
+                        </div>
+                        <ul class="sub-info">
+                            <li>※ 중량물 500kg 이상 물품에 대해 신고 필수</li>
+                            <li>※ 신고 시 물품명, 수량, 운반방법, 포장(보관)상태, 중량(kg)을 정확하게 기입하여 주시기 바랍니다.</li>
+                            <li>※ 농기계(트렉터 등) 신고 안내<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;– 차량번호 O 차량번호 기입 필수<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;– 차량번호 X 중량물로 신고
+                            </li>
+                            <li>※ 컨테이너 신고 안내<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;– 내부 전시물 포함 중량 500kg 이상 시 중량물로 신고 필수
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="collapse-header">
+                        <div>
+                            <h2>출입증 신청</h2>
+                            <strong class="is-blue">필수 ~ 2025. 08. 27.(수)17:00 까지</strong>
+                        </div>
+                        <button class="is-toggle" data-toggle="collapse" data-target=".collapse.fifth" data-text="Collapse">펼치기</button>
+                    </div>
+                    <div class="collapse fifth">
+                        <h3>출입증 신청</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>구분</th>
+                                    <th class="is-required">기관(기업)명</th>
+                                    <th class="is-required">성명</th>
+                                    <th class="is-required">직책</th>
+                                    <th>삭제</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><input type="text" value="lorem ipsum" /></td>
+                                    <td><input type="text" value="lorem ipsum" /></td>
+                                    <td><input type="text" value="lorem ipsum" /></td>
+                                    <td><img src="../../img/icon_delete.svg" alt="삭제" role="button"></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><input type="text" /></td>
+                                    <td><input type="text" /></td>
+                                    <td><input type="text" /></td>
+                                    <td><img src="../../img/icon_delete.svg" alt="삭제" role="button"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="flex center">
+                            <button class="is-action">추가</button>
+                        </div>
+                        <ul class="sub-info">
+                            <li>※ 전시기간 및 준비, 철거기간 중 전시장 출입을 위한 신분증입니다.</li>
+                            <li>※ 출입증 신청은 참가기관(기업)별로 신청 가능합니다.</li>
+                            <li>※ 1부스 당 출입증은 3개 제공되며, 부스 상주 인원만 신청바랍니다.</li>
+                            <li>※ 부스 상주 외 인원의 경우 현장 QR 등록을 통한 출입 바랍니다.</li>
+                        </ul>
+                        <div class="flex center">
+                            <button class="is-primary is-submit">저장</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="collapse-header">
+                        <div>
+                            <h2>전시비품 신청</h2>
+                            <strong class="is-blue">필수 ~ 2025. 08. 27.(수)17:00 까지</strong>
+                        </div>
+                        <button class="is-toggle" data-toggle="collapse" data-target=".collapse.sixth" data-text="Collapse">펼치기</button>
+                    </div>
+                    <div class="collapse sixth">
+                        <h3>전시비품 신청</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>지원업무</th>
+                                    <th>공식 가구 및 비품 렌탈 업체</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>업체명</td>
+                                    <td>모듈</td>
+                                </tr>
+                                <tr>
+                                    <td>업체명</td>
+                                    <td>모듈</td>
+                                </tr>
+                                <tr>
+                                    <td>업체명</td>
+                                    <td>모듈</td>
+                                </tr>
+                                <tr>
+                                    <td>업체명</td>
+                                    <td>모듈</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ul class="sub-info">
+                            <li>※ 부스 기본 구성 외 추가로 필요하신 비품이 있으실 경우 공식 가구 및 비품 렌탈 업체의 연락처로 문의 바랍니다.</li>
+                        </ul>
+                        <div class="flex center">
+                            <button class="is-primary is-submit">렌탈 업체 바로가기</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="collapse-header">
+                        <div>
+                            <h2>등록완료</h2>
+                            <strong class="is-blue">필수 ~ 2025. 08. 27.(수)17:00 까지</strong>
+                        </div>
+                        <button class="is-toggle" data-toggle="collapse" data-target=".collapse.seventh" data-text="Collapse">펼치기</button>
+                    </div>
+                    <div class="collapse seventh">
+                        <h3>등록완료</h3>
+                        <p class="complete-msg">※ 신청이 완료된 참여기관(기업)은 반드시 등록완료 바랍니다.<br/>작성된 내용은 각 부문별 신청일 전까지 수정이 가능합니다.</p>
+                        <div class="flex center">
+                            <button class="is-primary is-submit">등록완료</button>
+                        </div>
+                    </div>
+                </section>
             </div>
 
-            <div id="confirm">3</div>
+            <div id="confirm">
+                <section>
+                    <div class="collapse-header">
+                        <div>
+                            <h2>신청정보 확인</h2>
+                        </div>
+                    </div>
+                    <div class="collapse show">
+                        <h3>전시부스 신청</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>기관(기업)명</th>
+                                    <th>구분</th>
+                                    <th>신청수량</th>
+                                    <th>단가</th>
+                                    <th>금액</th>
+                                    <th>등록일</th>
+                                    <th>수정일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>lorem ipsum</td>
+                                    <td>독립부스</td>
+                                    <td>8</td>
+                                    <td>2,500,000</td>
+                                    <td>18,000,000</td>
+                                    <td>1234-01-31 11:11:11</td>
+                                    <td>1234-01-31 11:11:11</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5"><strong>총액(VAT 포함)</strong></td>
+                                    <td colspan="3"><strong class="is-blue">22,000,000</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>유틸리티 신청</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>기관(기업)명</th>
+                                    <th>품목</th>
+                                    <th>신청수량</th>
+                                    <th>단가</th>
+                                    <th>금액</th>
+                                    <th>등록일</th>
+                                    <th>수정일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>lorem ipsum</td>
+                                    <td>독립부스</td>
+                                    <td>8</td>
+                                    <td>2,500,000</td>
+                                    <td>18,000,000</td>
+                                    <td>1234-01-31 11:11:11</td>
+                                    <td>1234-01-31 11:11:11</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5"><strong>총액(VAT 포함)</strong></td>
+                                    <td colspan="3"><strong class="is-blue">123,000</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>위험·중량물 신고</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>기관(기업)명</th>
+                                    <th>신고 물품명</th>
+                                    <th>중량(kg)</th>
+                                    <th>단가</th>
+                                    <th>금액</th>
+                                    <th>등록일</th>
+                                    <th>수정일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3">1</td>
+                                    <td>lorem ipsum</td>
+                                    <td>독립부스</td>
+                                    <td>8</td>
+                                    <td>2,500,000</td>
+                                    <td>18,000,000</td>
+                                    <td>1234-01-31 11:11:11</td>
+                                    <td>1234-01-31 11:11:11</td>
+                                </tr>
+                                <tr>
+                                    <th style="border-left: 1px solid #ccc; border-top: 1px solid #ccc;">반입일시</th>
+                                    <th style="border-top: 1px solid #ccc;">반출일시</th>
+                                    <th colspan="5" style="border-top: 1px solid #ccc;">반출일시</th>
+                                </tr>
+                                <tr>
+                                    <td style="border-left: 1px solid #ccc">1234-11-11</td>
+                                    <td>1234-11-11</td>
+                                    <td colspan="5">-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>출입증 신청</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>기관(기업)명</th>
+                                    <th>성명</th>
+                                    <th>직책</th>
+                                    <th>등록일</th>
+                                    <th>수정일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>lorem ipsum</td>
+                                    <td>홍길동</td>
+                                    <td>사원</td>
+                                    <td>1234-01-31 11:11:11</td>
+                                    <td>1234-01-31 11:11:11</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>lorem ipsum</td>
+                                    <td>홍길동</td>
+                                    <td>사원</td>
+                                    <td>1234-01-31 11:11:11</td>
+                                    <td>1234-01-31 11:11:11</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>lorem ipsum</td>
+                                    <td>홍길동</td>
+                                    <td>사원</td>
+                                    <td>1234-01-31 11:11:11</td>
+                                    <td>1234-01-31 11:11:11</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="result">
+                            <div>신청금액: 123,456,000원</div>
+                            <div>할인내역: 123,456,000원</div>
+                            <div class="is-blue">총액(VAT포함): 123,456,000원</div>
+                        </div>
+                        <div class="result">
+                            <strong>입금: 0원</strong>
+                            <strong class="is-red">잔금: 123,456,000원</strong>
+                        </div>
+                        <div class="flex center">
+                            <button class="is-submit">출력하기</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
 

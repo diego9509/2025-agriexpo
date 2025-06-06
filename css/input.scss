@@ -1,6 +1,7 @@
 input:not([type="checkbox"]),
 input:not([type="radio"]),
-select {
+select,
+textarea {
     font-size: 1.125rem;
     font-family: 'Pretendard';
     border: 1px solid $border-input;
@@ -12,6 +13,9 @@ select {
     &:required {
         background: lighten($required-blue, 2%);
     }
+}
+textarea {
+    resize: none;
 }
 
 input[type="checkbox"],

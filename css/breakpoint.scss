@@ -1,4 +1,5 @@
 @media (max-width: 768px) {
+    $larger-padding: 2.25rem;
     input:not([type="checkbox"]),
     input:not([type="radio"]),
     select {
@@ -8,6 +9,7 @@
     button {
         font-size: .875rem;
         &.is-toggle {
+            font-size: .875rem;
             min-width: auto;
             padding: .5rem .75rem;
             &:after {
@@ -16,7 +18,12 @@
             }
         }
         &.is-submit {
-            padding: .75rem 3rem;
+            font-size: 1rem;
+        }
+        &.is-submit,
+        &.is-action {
+            padding-left: $larger-padding;
+            padding-right: $larger-padding;
         }
     }
     fieldset {
@@ -37,6 +44,9 @@
             padding-top: .5rem;
             padding-bottom: .5rem;
         }
+        td {
+            height: auto;
+        }
         &.is-form {
             border-top-width: 1px;
             tr {
@@ -46,6 +56,8 @@
                     padding: .25rem;
                 }
                 th {
+                    display: flex;
+                    align-items: center;
                     width: 30%;
                     &:nth-of-type(2) {
                         border-left: none;
@@ -91,10 +103,10 @@
         }
         section {
             h2 {
-                font-size: 1rem;
+                font-size: 1.125rem;
             }
             h3 {
-                font-size: .875rem;
+                font-size: 1rem;
                 font-weight: 600;
                 margin: 1.25rem 0 .375rem;
             }
@@ -163,6 +175,14 @@
     .collapse {
         &-header {
             padding: 1rem 0;
+            div {
+                flex-direction: column;
+                align-items: flex-start;
+                gap:.125rem;
+                h2 {
+                    flex-basis: auto;
+                }
+            }
             strong {
                 font-size: .75rem;
             }
@@ -176,5 +196,9 @@
         .is-blue {
             font-size: 1.125rem;
         }
+    }
+
+    .complete-msg {
+        font-size: .875rem;
     }
 }
