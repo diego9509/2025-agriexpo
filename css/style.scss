@@ -129,6 +129,11 @@ fieldset {
             padding: 0;
         }
     }
+    &.admin {
+        h1 {
+            background: $dark-red;
+        }
+    }
 }
 
 .collapse {
