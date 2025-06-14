@@ -130,6 +130,8 @@ fieldset {
         }
     }
     &.admin {
+        background: white;
+        min-width: 1080px;
         h1 {
             background: $dark-red;
         }
@@ -188,6 +190,8 @@ fieldset {
 .grey-box {
     background: $bg-th;
     margin: 2rem 0;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
     span,
     strong {
         font-size: 1.125rem;
@@ -195,8 +199,46 @@ fieldset {
     img {
         width: 1.5rem;
     }
-    gap: 1.5rem;
-    padding: 1.5rem 1rem;
+    input {
+        width: 9.5rem;
+        margin: 0 .25rem;
+    }
+    label {
+        width: 100%;
+        padding: 1rem 4rem;
+        gap: 0;
+        & + label {
+            margin: 0;
+        }
+        span {
+            flex: 0 0 4rem;
+        }
+        input,
+        textarea {
+            flex-grow: 1;
+            margin: 0;
+        }
+    }
+    .flex.center {
+        margin-top: 1rem;
+    }
+}
+
+.request-box {
+    border: 1px solid $border-table;
+    line-height: 1.6;
+    padding: 1rem 4rem;
+    .align-center,
+    .align-start {
+        gap: 1rem;
+    }
+    .align-start {
+        margin-top: 2rem;
+    }
+    p {
+        margin: 0;
+    }
+
 }
 
 .sub-info {
@@ -220,6 +262,58 @@ fieldset {
     border-left: none;
     border-right: none;
     text-align: center;
+}
+
+.admin {
+    form {
+        width: 30rem;
+        margin: 0 auto;
+        fieldset {
+            font-size: 1rem;
+            margin-top: 1.5rem;
+            &:last-of-type {
+                label span {
+                    flex-basis: 11rem;
+                }
+            }
+            legend,
+            .legend {
+                position: relative;
+                font-size: 1.25rem;
+                font-weight: 500;
+                &:before {
+                    position: absolute;
+                    top: 50%;
+                    left: -1rem;
+                    transform: translateY(-50%);
+                    content: '';
+                    display: inline-block;
+                    width: .75rem;
+                    height: .75rem;
+                    border-radius: 9999px;
+                    background: $dark-red;
+                }
+            }
+            legend {
+                margin-bottom: 1rem;
+            }
+            .flex {
+                gap: 1rem;
+                & + .flex {
+                    margin: 2rem 0 0;
+                }
+            }
+            input {
+                flex-grow: 1;
+            }
+        }
+    }
+    hr {
+        height: 1px;
+        border: none;
+        background: $border-table;
+        margin: 3rem 0;
+    }
 }
 
 @import "breakpoint.scss";

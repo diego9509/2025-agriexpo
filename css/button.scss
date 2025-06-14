@@ -63,4 +63,7 @@ button {
 }
 img[role=button] {
     cursor: pointer;
+    &:hover {
+        filter: brightness(70%);
+    }
 }

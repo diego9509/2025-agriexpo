@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/style.min.css" />
+</head>
+<body>
+    <div class="page-wrapper admin">
+        <header><h1>브랜드쿡 참가신청 관리자 페이지</h1></header>
+        <div class="wrapper">
+
+            <section>
+                <h3 class="flex align-center between">
+                    <span>2025 대한민국 농업박람회 참가기업 현황</span>
+                    <div class="flex" style="gap: .25rem;">
+                        <button class="is-action" style="margin: 0;">DB 초기화</button>
+                        <button class="is-action" style="margin: 0;">엑셀 다운로드</button>
+                    </div>
+                </h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>기관(기업)명</th>
+                            <th>담당자/직책</th>
+                            <th>연락처</th>
+                            <th>삭제</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2025 대한민국 농업박람회</td>
+                            <td>홍길동</td>
+                            <td>010-1234-5678</td>
+                            <td><img src="../../img/icon_delete.svg" alt="삭제" role="button" /></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2025 대한민국 농업박람회</td>
+                            <td>홍길동</td>
+                            <td>010-1234-5678</td>
+                            <td><img src="../../img/icon_delete.svg" alt="삭제" role="button" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul class="pagenation">
+                    <li class="prev"><a href="">prev</a></li>
+                    <li class="is-selected"><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">5</a></li>
+                    <li class="next"><a href="">next</a></li>
+                </ul>
+                <div class="flex center">
+                    <div class="flex align-center" style="gap: .5rem;">
+                        <span>기관(기업)명 or 담당자</span>
+                        <div class="flex align-center" style="gap: .25rem;">
+                            <input type="text" />
+                            <img src="../../img/img_search.svg" alt="검색" role="button" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+</body>
+</html>
