@@ -53,7 +53,7 @@ fieldset {
         left: 2px;
     }
 }
-.text{
+.text {
     &-right {
         text-align: right;
     }
@@ -72,6 +72,12 @@ fieldset {
         position: sticky;
         top: 0;
         z-index: 2;
+        > img {
+            position: absolute;
+            top: 50%;
+            right: 4rem;
+            transform: translateY(-50%);
+        }
     }
     h1,
     h2 {

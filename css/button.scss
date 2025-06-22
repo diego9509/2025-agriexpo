@@ -60,6 +60,10 @@ button {
         padding-right: $larger-padding;
         margin-bottom: 1rem;
     }
+    &.is-done {
+        background: #ccc;
+        border: 1px solid #777;
+    }
 }
 img[role=button] {
     cursor: pointer;
